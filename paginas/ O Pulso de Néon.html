@@ -9,8 +9,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-size: cover;
-            background-attachment: fixed;
             
         }
         body {
@@ -38,26 +36,27 @@
         h1 {
             font-size: 1.5em;
             font-family: 'Times New Roman', Times, serif;
-            color: rgb(107, 107, 107);
+            color: darkgreen;
             background-color: #ffffff;
             padding: 5px 10px;
-            border-radius: 5px;
+            border-radius: 0.3em;
         }
 
         p#neon {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #fff;
             font-size: 1.2em;
-            color: #27a810;
-            background-color: #ffffff00;
-            padding: 12px 14px;
+            color: darkblue;
+            margin: 12px;
+            padding: 14px;
             border-radius: 1em;
         }
 
         h2 {
             font-size: 1.2em;
             font-family: 'Times New Roman', Times, serif;
-            color: #626462;
-            background-color: #fff;
+            color: darkgreen;
+            background-color: #ffffff00;
             padding: 4px 5px;
             border-radius: 0.5em;
         }
@@ -66,33 +65,19 @@
             font-size: 1.2em;
             font-family: 'Times New Roman', Times, serif;
             color: #626462;
-            background-color: #fff;
+            background-color: #ffffff00;
             padding: 4px 3px;
             border-radius: 0.5em;
         }
 
-        ul {
+        div.neo > ul, li {
+            background-color: #ffffff00;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 10px;
             list-style: none;
-            padding-left: 10px;
-            margin: auto;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        li {
-            font-size: 1.1em;
-            color: #ff0000;
-        }
-
-        li strong > i {
-            color: #27a810;
-        }
-
-        li strong > i:hover {
-            color: yellow;
-            transition: 0.5ms;
-            background-color: #462525;
-        }
-
+            margin: 10px;
+        }   
         footer {
             text-align: center;
             font-size: 15px;
@@ -139,17 +124,19 @@
                 (formas geométricas negras e sem textura) tentaram cercá-la, 
                 ela abriu os braços e libertou uma Onda de Choque de Harmonia.
             </p>
-            <ul>
-                <li>
-                    <strong><i>A Habilidade:</i></strong>Tudo o que o vírus tocava tornava-se estático e nulo. 
-                    Onde o Pulso de Néon passava, os pixels corrompidos voltavam a formar memórias:
-                    o riso de uma criança, o cheiro da chuva, a cor de um pôr do sol antigo.
-                </li>
-                <li>
-                    <strong><i>O Visual:</i></strong> Seus cristais flutuantes agem como antenas, disparando 
-                    feixes de luz neon que "escaneiam" e restauram a integridade do código da alma dos habitantes.
-                </li>
-            </ul>
+            <div class="neo">
+                <ul>
+                    <li>
+                        <strong><i>A Habilidade:</i></strong>Tudo o que o vírus tocava tornava-se estático e nulo. 
+                        Onde o Pulso de Néon passava, os pixels corrompidos voltavam a formar memórias:
+                        o riso de uma criança, o cheiro da chuva, a cor de um pôr do sol antigo.
+                    </li>
+                    <li>
+                        <strong><i>O Visual:</i></strong> Seus cristais flutuantes agem como antenas, disparando 
+                        feixes de luz neon que "escaneiam" e restauram a integridade do código da alma dos habitantes.
+                    </li>
+                </ul>
+            </div>
         <h2>A Muralha de Cristal</h2>
             <p id="neon">
                 Para impedir que o vírus se espalhasse pelo núcleo do Nexo, o Pulso de Néon realizou a Grande Encriptação. 
@@ -159,6 +146,7 @@
                 tecnológica que aparece nos sonhos digitais para garantir que nenhuma memória seja perdida no esquecimento do vazio.
             </p>
         <h2>Atributos da Tecno-Mística:</h2>
+        <div class="neo">
             <ul>
                 <li>
                     <strong><i>Arma Principal:</i></strong> Sinfonia de Dados (uma frequência sonora que reconstrói ficheiros corrompidos).
@@ -170,6 +158,8 @@
                     <strong><i>O Grande Dilema:</i></strong> Ela só pode existir enquanto a rede estiver ligada. Se o hardware físico falhar, ela desaparece com toda a civilização.
                 </li>
             </ul>
+        </div>
+                
             <p id="neon">
                 Gostaria de ver o que acontece quando o Pulso de Néon (Digital) 
                 precisa de pedir ajuda à Ira Escarlate (Física) para proteger 
